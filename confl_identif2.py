@@ -118,9 +118,8 @@ def analyze_merge_commits_in_exact_branch(repo_path: str, branch: str) -> tuple[
                                         content = ""
 
                                         for i in range(start, end + 1):
-                                            print(f"  {i + 1:4}: {lines[i].strip()}")
-                                            content += f"{i + 1:4}: {lines[i].strip()}"
-                                            content += "\n"
+                                            print(f"  {i + 1:4}: {lines[i]}", end="")
+                                            content += lines[i]
 
                                         data.append({
                                             "commit": commit_hash,
@@ -193,7 +192,7 @@ def find_conflict_blocks(lines: list[str]) -> list[tuple[int, int]]:
                 start = None
     return conflict_blocks
 
-url = "https://github.com/nomic-ai/gpt4all.git"
+url = "https://github.com/Tencent/Hunyuan3D-2.git"
 repo_path = clone(url)
 
 # branch = "dev4.0"
