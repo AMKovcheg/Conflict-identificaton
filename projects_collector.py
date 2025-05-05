@@ -115,23 +115,21 @@ def get_sample_repos_in_txt(filename: str = "papers_sample.txt") -> None:
                 f.write(repo)
                 f.write("\n")
 
+def remove_duplicates():
+    repos = []
+    with open("github_repos.txt", mode="r") as f:
+        repos = f.read().splitlines()
+        repos = list(set(repos))
 
+    with open("github_repos.txt", mode="w") as f:
+        for r in repos:
+            f.write(r)
+            f.write("\n")
 
-xml_url = "https://paperswithcode.com/sitemap.xml"
-# links = extract_papers_links(xml_url)
-# print(links)
-
-# papers_links = extract_papers_links(xml_url)
-# random_paper = 137
-
-# print(extract_author_links(papers_links[random_paper]))
-# url = "https://paperswithcode.com/paper/abdominal-multi-organ-segmentation-with"
-# print(find_repos(url))
-
-# all_papers = get_all_papers(xml_url)
-# print(all_papers)
-# write_to_txt(all_papers)
-
-# get_sample_in_txt()
-
-get_sample_repos_in_txt()
+if __name__ == "__main__":
+    xml_url = "https://paperswithcode.com/sitemap.xml"
+    all_papers = get_all_papers(xml_url)
+    write_to_txt(all_papers)
+    get_sample_in_txt()
+    get_sample_repos_in_txt()
+    remove_duplicates()

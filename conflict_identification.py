@@ -4,6 +4,7 @@ import tempfile
 import git
 from git import Repo
 import re
+import shutil
 
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -192,13 +193,37 @@ def find_conflict_blocks(lines: list[str]) -> list[tuple[int, int]]:
                 start = None
     return conflict_blocks
 
-url = "https://github.com/Tencent/Hunyuan3D-2.git"
-repo_path = clone(url)
+def analyze_all_repos(filename: str = "remaining_repos.txt") -> None:
+    repos: list[str] = []
+    with open(filename) as f:
+        repos = f.read().splitlines()
 
-# branch = "dev4.0"
+    for r in repos:
+        print(r)
+        external = "materials_for_dataset"
 
-# print(analyze_merge_commits_in_exact_branch(repo_path, branch))
-analyze_all_merge_commits(repo_path)
-'''branches = get_all_branches(repo_path)
-for b in branches:
-    print(b)'''
+        url = r + ".git"
+        repo_path = clone(url)
+        repo = Repo(repo_path)
+        repo_name = repo.remotes.origin.url.split('/')[-1].replace('.git', '')
+        parquet_name = f'{repo_name}-conflicts.parquet'
+
+        analyze_all_merge_commits(repo_path)
+
+        df = pd.read_parquet(parquet_name)
+        if len(df) < 10:
+           shutil.rmtree(repo_name)
+           os.remove(parquet_name)
+           continue
+
+        folder = external + "/!" + repo_name
+
+        if os.path.exists(folder):
+            folder = external + "/!" + r
+
+        os.makedirs(folder)
+        shutil.move(repo_name, os.path.join(folder, repo_name))
+        shutil.move(parquet_name, os.path.join(folder, parquet_name))
+
+if __name__ == "__main__":
+    analyze_all_repos("repos_to_analyze.txt")
