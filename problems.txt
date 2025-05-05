@@ -1,0 +1,75 @@
+Не является git-репозиторием:
+https://CRAN.R-project.org/package=tram
+https://zenodo.org/record/4343646
+
+Ссылка на директорию/файл, а не на сам репозиторий:
+https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/graphix
+https://github.com/2023-MindSpore-4/Code-5/tree/main/HiFaceGAN
+https://github.com/MindSpore-paper-code-3/code4/tree/main/HiFaceGAN
+https://github.com/Mind23-2/MindCode-3/tree/main/HiFaceGAN
+https://github.com/2023-MindSpore-1/ms-code-214/tree/main/HiFaceGAN
+https://github.com/PacktPublishing/Hands-On-Image-Generation-with-TensorFlow-2.0/tree/master/Chapter08
+https://github.com/sjb3d/descent/tree/main/examples/image_fit
+https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/Instant_Neural_Graphics_Primitives_with_a_Multiresolution_Hash_Encoding
+https://github.com/magenta/magenta/tree/main/magenta/models/image_stylization
+https://github.com/2024-MindSpore-1/Code4/tree/main/CycleGAN
+https://github.com/2023-MindSpore-4/Code10/tree/main/CycleGAN
+https://github.com/2023-MindSpore-4/Code1/tree/main/CycleGAN
+https://github.com/codelion/optillm/blob/main/optillm/mcts.py
+https://github.com/2023-MindSpore-4/Code13/tree/main/zhanglan/MLink-main/mlink_ms
+https://github.com/pwc-1/Paper-9/tree/main/1/vits
+https://github.com/DataLabUPO/CVOA_academic/tree/master/src/parallelcvoa
+https://github.com/pwc-1/Paper-10/tree/main/splinter
+https://github.com/pwc-1/Paper-9/tree/main/led
+https://github.com/2024-MindSpore-1/Code8/tree/main/atlgp-master
+https://github.com/BR-IDL/PaddleViT/tree/develop/image_classification/ResT
+https://github.com/google-research/language/tree/master/language/wikipedia_anchors
+https://github.com/MindCode-4/code-11/tree/main/drop-an-octave-reducing-spatial
+https://github.com/MindCode-4/code-6/tree/main/drop-an-octave-reducing-spatial
+https://github.com/claritychallenge/clarity/tree/main/recipes/cad1/task1
+https://github.com/yangyucheng000/University/tree/main/model-1/qdqbert
+https://github.com/MindCode-4/code-4/tree/main/qdqbert
+https://github.com/MindCode-4/code-2/tree/main/qdqbert
+https://github.com/google-research/google-research/tree/master/pwil
+https://github.com/2023-MindSpore-4/Code12/tree/main/liuhao/Joint%20Statistical%20and%20Causal%20Feature%20Modulated%20Face%20Anti-Spoofing
+https://github.com/MindSpore-paper-code-3/code9/tree/main/OpenPose
+https://github.com/2023-MindSpore-4/Code10/tree/main/OpenPose
+https://github.com/2023-MindSpore-1/ms-code-223/tree/main/OpenPose
+https://github.com/2023-MindSpore-1/ms-code-5/tree/main/OpenPose
+https://github.com/2023-MindSpore-4/Code9/tree/main/OpenPose
+https://github.com/Zero-nnkn/ml-utils/blob/main/cv/pose/openpose_predictor.py
+https://github.com/2024-MindSpore-1/Code4/tree/main/OpenPose
+https://github.com/xKameshx/ML/blob/main/!!TOP1-Copy1.ipynb
+https://github.com/MS-P3/code4/tree/main/CIGF
+https://github.com/Salabh2k2/Awesome-Project-Collection/blob/main/Traffic_flow_Prediction_using_LSTM%2BFasterSTGCN.ipynb
+https://github.com/google-research/google-research/tree/master/multi_game_dt
+https://github.com/mlivesu/cinolib/blob/master/include/cinolib/earcut_mapping.h
+https://github.com/PaddlePaddle/PaddleNLP/tree/develop/model_zoo/ernie-health
+https://github.com/MS-P3/code4/tree/main/D2Co
+https://github.com/ProSeCo-Planning/ros_proseco_planning/tree/main/python/proseco/inverse_reinforcement_learning
+
+ошибка при попытке выполнить git checkout:
+https://github.com/prob-ml/bliss
+https://github.com/microsoft/semi-supervised-learning
+https://github.com/audio-westlakeu/fullsubnet
+https://github.com/josefkaufmann/ana_cont
+https://github.com/thecharlieblake/Solvitaire
+https://github.com/adamshephard/tiager
+https://github.com/chaofengc/iqa-pytorch
+https://github.com/panagiotisanagnostou/hipart
+
+ошибка при клонировании репозитория:
+https://bitbucket.org/gsudmlab/explainingfulldisk
+https://github.com/andreasschachner/cy_orientifold_database
+https://github.com/uzh-dqbm-cmi/eustar_dgm4h
+https://github.com/russelljeffrey/CTMBIDS
+https://github.com/japeshmethuku17/deep-learning-thesis
+https://github.com/semta-group/fairgenai
+https://github.com/kenanidris/deoldify
+
+ошибка при попытке выполнить Repo(repo_path):
+https://github.com/TheSoundOfAIOSR/thesoundofaiosr.github.io
+
+process killed(после очень долгого выполнения):
+https://github.com/norlab-ulaval/rts_project
+https://github.com/norlab-ulaval/RTS_Extrinsic_Calibration
